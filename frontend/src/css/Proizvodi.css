@@ -1,0 +1,51 @@
+/* Layout stranice */
+.page-products { padding: 18px 0; }
+.products-head {
+  display:flex; align-items:center; justify-content:space-between;
+  gap:12px; flex-wrap:wrap; margin-bottom:14px;
+}
+.controls { display:flex; gap:8px; flex-wrap:wrap; }
+
+/* Kontrole */
+.input{
+  padding:10px 12px; border:1px solid var(--stroke, #e5e7eb);
+  border-radius:10px; background:#fff; color:var(--ink, #1f2937);
+}
+.btn{
+  padding:10px 12px; border:1px solid var(--stroke, #e5e7eb);
+  background:#fff; border-radius:10px; cursor:pointer;
+}
+.btn.primary{ background:var(--accent, #7c3aed); color:#fff; border:none; }
+
+/* Grid kartica */
+.grid.products-grid{
+  display:grid; gap:16px;
+  grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* Ploče / poruke */
+.panel{
+  border:1px solid var(--stroke, #e5e7eb);
+  border-radius:12px; padding:14px; background:#fff;
+}
+.panel.error{ border-color:#ef4444; color:#b91c1c; }
+
+/* Kartica knjige (koristi je i BookCard.jsx) */
+.b-card{
+  background:#fff; border:1px solid var(--stroke, #e5e7eb);
+  border-radius:14px; padding:12px;
+  box-shadow:0 8px 20px rgba(2,6,23,.02);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.b-card:hover{ transform:translateY(-3px); box-shadow:0 14px 28px rgba(2,6,23,.06); }
+
+.b-cover{
+  height:180px; border-radius:12px; display:grid; place-items:center;
+  background:linear-gradient(135deg,#ede9fe,#fef3c7); color:#374151;
+  font-weight:800; font-size:28px; overflow:hidden;
+}
+.b-title{ margin:8px 0 2px; font-weight:700; }
+.b-sub{ color:#6b7280; font-size:14px; }
+.b-row{ display:flex; align-items:center; justify-content:space-between; margin-top:6px; }
+.b-badge{ background:#f3f4f6; border-radius:999px; padding:3px 8px; font-size:12px; }
+.b-price{ font-weight:800; }
