@@ -1,0 +1,9 @@
+# NetBeans (backend)
+nbproject/private/
+build/
+dist/
+
+# Visual Studio / frontend
+node_modules/
+.vscode/
+backend/target/
